@@ -1,7 +1,7 @@
-import { defineConfig } from 'vite'
+import { defineConfig as defineVitestConfig } from 'vitest/config'
 import react from '@vitejs/plugin-react'
 
-export default defineConfig({
+export default defineVitestConfig({
   plugins: [react()],
   base: '/lab1-react-vite-gh-pages',
   test: {
