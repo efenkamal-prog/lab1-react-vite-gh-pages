@@ -1,6 +1,6 @@
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import Counter from './components/Counter'
+import UserTable from './components/UserTable'
+import AlbumTable from './components/AlbumTable'   // ← добавили
 import './App.css'
 
 function App() {
@@ -8,14 +8,19 @@ function App() {
     <>
       <div>
         <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
+          <img src="/vite.svg" className="logo" alt="Vite logo" />
         </a>
         <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
+          <img src="/react.svg" className="logo react" alt="React logo" />
         </a>
       </div>
+
       <h1>Vite + React</h1>
-      <Counter /> {/* ← Теперь здесь только компонент */}
+
+      <Counter />
+      <UserTable />
+      <AlbumTable />   {/* ← вариант 7 отображается здесь */}
+
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
