@@ -46,6 +46,7 @@ jobs:
         run: |
           git config --global user.email "yourname@users.noreply.github.com"
           git config --global user.name "GitHub Actions"
+          git remote set-url origin https://$GH_TOKEN@github.com/efenkamal-prog/lab1-react-vite-gh-pages.git
       - name: Deploy to GitHub Pages
         run: npm run deploy
         env:

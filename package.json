@@ -6,7 +6,7 @@
     "build": "tsc -b && vite build",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist -r https://$GH_TOKEN@github.com/efendkam-prog/lab1-react-vite-gh-pages.git",
+    "deploy": "gh-pages -d dist",
     "test": "vitest",  
     "coverage": "vitest run --coverage" 
   },
