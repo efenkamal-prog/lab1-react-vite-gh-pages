@@ -49,4 +49,4 @@ jobs:
           publish_dir: ./dist
           publish_branch: gh-pages
           commit_message: ${{ github.event.head_commit.message }}
-          deploy_key: ${{ secrets.DEPLOY_KEY }}  # ← Используем приватный ключ
+          deploy_key: ${{ secrets.DEPLOY_KEY }}
